@@ -166,8 +166,8 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(12, 11, 9, 0.6);
-  border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+  /* background: rgba(12, 11, 9, 0.6); 
+  border-bottom: 1px solid rgba(12, 11, 9, 0.6);  */
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
@@ -324,6 +324,16 @@ h1, h2, h3, h4, h5, h6 {
   }
   .nav-menu .drop-down .drop-down > a:after {
     content: "\ea9d";
+  }
+
+ 
+
+ 
+}
+@media(min-width: 1024px){
+  #header{
+    background: rgba(12, 11, 9, 0.6); 
+    border-bottom: 1px solid rgba(12, 11, 9, 0.6); 
   }
 }
 
