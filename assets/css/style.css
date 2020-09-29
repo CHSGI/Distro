@@ -166,8 +166,8 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  /* background: rgba(12, 11, 9, 0.6); 
-  border-bottom: 1px solid rgba(12, 11, 9, 0.6);  */
+  background: rgba(12, 11, 9, 0.6); 
+  border-bottom: 1px solid rgba(12, 11, 9, 0.6); 
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
@@ -175,9 +175,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-  top: 0;
+  top: 0px;
   background: rgba(0, 0, 0, 0.85);
   border-bottom: 1px solid #37332a;
+  padding: 30px 0;
+  
 }
 
 #header .logo {
@@ -330,12 +332,19 @@ h1, h2, h3, h4, h5, h6 {
 
  
 }
-@media(min-width: 1024px){
+ @media(max-width: 1024px){
   #header{
     background: rgba(12, 11, 9, 0.6); 
     border-bottom: 1px solid rgba(12, 11, 9, 0.6); 
-  }
-}
+    padding: 30px 0;
+  } 
+
+  /* #header.header-scrolled {
+    top: 0;
+    background: rgba(0, 0, 0, 0.85);
+    border-bottom: 1px solid #37332a;
+  } */
+} 
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
